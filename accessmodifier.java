@@ -1,35 +1,33 @@
-
 import java.util.*;
 
 class accessmodifier {
-    private int n;
-    private String str;
+    private int pin;
+    private String UserName;
 
     public void display() {
-        System.out.println(n);
-        System.out.println(str);
+        System.out.println("cos pin:" + pin);
+        System.out.println("cos name:" + UserName);
     }
 
-    public void setValues(String nam, int roll) {
-        n = roll;
-        str = nam;
+    public void setValues(String name, int userpin) {
+        pin = userpin;
+        UserName = name;
+    }
+    public String getValue(){
+        return UserName;
     }
 
-    public String getValue() {
-        return str;
-    }
 }
 
 class main {
     public static void main(String[] args) {
-        accessmodifier u1 = new accessmodifier();
-        u1.setValues("gokul", 39);
-        u1.display();
+        accessmodifier cos1 = new accessmodifier();
+        cos1.setValues("Rock", 1123);
+        cos1.display();
+        String str=cos1.getValue();
+        System.out.println(str);
 
-        accessmodifier u2 = new accessmodifier();
-        u2.setValues("gt", 14);
-        u2.display();
-        String std2 = u2.getValue();
-        System.out.println(std2);
+
     }
+
 }
