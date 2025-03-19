@@ -2,7 +2,7 @@ import java.util.*;
 
 class accessmodifier {
     private int pin;
-    private String UserName;
+    protected String UserName;
 
     public void display() {
         System.out.println("cos pin:" + pin);
