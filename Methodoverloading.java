@@ -25,5 +25,4 @@ class min {
             System.out.println("c is big" + c);
         }
     }
-
 }
